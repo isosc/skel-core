@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+
+# The skel program provides a simple, general-purpose
+# generative programming mechanism
+# Note: this code has itself been generated
+
+from Cheetah.Template import Template
+#import json
+import sys
+
+import skel
+
+
+if __name__=="__main__":
+    sys.exit (skel.main (sys.argv))
+
