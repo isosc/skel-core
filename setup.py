@@ -12,7 +12,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/isosc/skel-core",
-    install_requires=['Cheetah'],
+    install_requires=['Cheetah3'],
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -21,5 +21,5 @@ setuptools.setup(
     ],
     python_requires='>=3.6',
     test_suite='nose.collector',
-    tests_require=['nose'],
+    tests_require=['nose']
 )
