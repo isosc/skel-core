@@ -2,7 +2,6 @@
 
 # The skel program provides a simple, general-purpose
 # generative programming mechanism
-# Note: this code has itself been generated
 
 from Cheetah.Template import Template
 #import json
