@@ -1,5 +1,5 @@
 # skel-core
-Contains the core skel libraries and skel command line tool.
+Contains the core skel libraries and skel command line tool. Skel has been greatly simplified from previous versions, and I/O specific modules have been moved to a [separate area](https://github.com/isosc/skel-io).
 
 
 ## Installing skel
