@@ -48,9 +48,16 @@ def process(config):
       with open (argpair.split(':')[0], "r") as clfile:   
         models[argpair.split(':')[1]] = json.load(clfile) 
 
+
     # Process the  template
     t = Template(file=config.template)
     t.models = models
+
+    if config.arg:
+        name, value = config.arg.split(':')
+        t.arg = {}
+        t.arg[name] = value
+
     t.instantiated_templates = instantiated_templates
 
     # Instantiate template
@@ -81,6 +88,7 @@ def commandline (argv):
   _parser_template.add_argument('template')
   _parser_template.add_argument('--model', dest="modelfile", required="true")
   _parser_template.add_argument('--outfile', dest="outfile", required="true")
+  _parser_template.add_argument('--arg', dest="arg", required=False)
 
   _parser_template = subparsers.add_parser('make_instance', help="Create an instance of a given schema suitable for testing")
   _parser_template.add_argument('--schema', dest="schemafile", required="true")
