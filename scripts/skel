@@ -11,8 +11,6 @@ from skel import __skel
 
 
 if __name__=="__main__":
-    print (skel)    
-    print (dir (skel))
     print (__skel)
     print (dir (__skel))
     sys.exit (__skel.main (sys.argv))
