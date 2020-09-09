@@ -7,7 +7,7 @@ from Cheetah.Template import Template
 #import json
 import sys
 
-import skel
+from skel import __skel
 
 
 if __name__=="__main__":
